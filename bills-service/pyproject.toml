@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "bills-service"
+version = "0.1.0"
+description = ""
+authors = ["Alfredo Viera <alvie97m@gmail.com>"]
+readme = "README.md"
+packages = [{include = "bills_service"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
