@@ -10,4 +10,4 @@ Web project that lets you keep track of bills.
 
 ## Architecture
 
-![Architecture](diagrams/architecture.drawio.png)
+![Architecture](docs/diagrams/architecture.drawio.png)
