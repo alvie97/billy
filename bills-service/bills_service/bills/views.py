@@ -1,3 +1,13 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+from .models import Bill
+from .serializers import BillSerializer
+
+
+class BillsListView(viewsets.ModelViewSet):
+    """
+    A simple ViewSet for viewing all Bills
+    """
+
+    queryset = Bill.objects.all()
+    serializer_class = BillSerializer
