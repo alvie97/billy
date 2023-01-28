@@ -180,6 +180,21 @@ tomli = {version = ">=1.0.0", markers = "python_version < \"3.11\""}
 testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "xmlschema"]
 
 [[package]]
+name = "pytest-django"
+version = "4.5.2"
+description = "A Django plugin for pytest."
+category = "dev"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+pytest = ">=5.4.0"
+
+[package.extras]
+docs = ["sphinx", "sphinx-rtd-theme"]
+testing = ["Django", "django-configurations (>=2.0)"]
+
+[[package]]
 name = "python-dotenv"
 version = "0.21.0"
 description = "Read key-value pairs from a .env file and set them as environment variables"
@@ -233,7 +248,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "83f6816161d895ee35c33bd0fb317d69eed35321489a1ab04557369d7fe390ff"
+content-hash = "0bef2ecddf10bd08f594b53f6a0386d002624ca62e2332d68182319eb97e12d8"
 
 [metadata.files]
 asgiref = [
@@ -299,6 +314,10 @@ pyflakes = [
 pytest = [
     {file = "pytest-7.2.1-py3-none-any.whl", hash = "sha256:c7c6ca206e93355074ae32f7403e8ea12163b1163c976fee7d4d84027c162be5"},
     {file = "pytest-7.2.1.tar.gz", hash = "sha256:d45e0952f3727241918b8fd0f376f5ff6b301cc0777c6f9a556935c92d8a7d42"},
+]
+pytest-django = [
+    {file = "pytest-django-4.5.2.tar.gz", hash = "sha256:d9076f759bb7c36939dbdd5ae6633c18edfc2902d1a69fdbefd2426b970ce6c2"},
+    {file = "pytest_django-4.5.2-py3-none-any.whl", hash = "sha256:c60834861933773109334fe5a53e83d1ef4828f2203a1d6a0fa9972f4f75ab3e"},
 ]
 python-dotenv = [
     {file = "python-dotenv-0.21.0.tar.gz", hash = "sha256:b77d08274639e3d34145dfa6c7008e66df0f04b7be7a75fd0d5292c191d79045"},

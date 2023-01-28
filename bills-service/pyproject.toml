@@ -17,6 +17,7 @@ python-dotenv = "^0.21.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.2.1"
+pytest-django = "^4.5.2"
 
 
 [tool.poetry.group.dev.dependencies]

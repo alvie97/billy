@@ -3,10 +3,16 @@
 import os
 import sys
 
+from bills_service.settings.base import DEBUG
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bills_service.settings')
+
+    if DEBUG:
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bills_service.settings.local')
+    else:
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bills_service.settings.prod')
+
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
